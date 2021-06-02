@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-bpx;
+}
+.login{
+    background: -webkit-radial-gradient(rgb(225 190 231) 38%, rgb(186 104 200) 75%,rgb(156 39 176) 95%);
+    background-size:initial;
+    height:100vh;
+}
+.inp1{
+    border:none;
+    outline:none;
+    border-bottom:2px solid grey;
+    width:100%;
+}
+.row{
+    padding: auto 20px auto 20px;
+}
+.row1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -284px;
+    margin-left: px;
+}
+.row4{
+    border-bottom:1px solid grey;
+}
+.row6{
+    margin-top: -34px;
+    margin-left: -17px;
+}
+.row7{
+    margin-left: -58px;
+    margin-top: -41px;
+}
+.row8{
+    margin-left: -85px;
+    margin-right: -212px;
+    padding: 13px 16px;
+   
+}
+.row9{
+    margin-left: 49px;
+    width: 117%;
+    margin-top: 17px;
+}
+.subtn{
+    height:39px;
+    width:110px;
+    border-radius: 4px;
+    background-color:rgb(78 58 173);
+}
+.data1{
+    border:none;
+    outline:none;
+    border-bottom:2px solid grey;
+    width:158%;
+ 
+}
+.data2{
+    border:none;
+    outline:none;
+    border-bottom:2px solid grey;
+    width:100%;
+}
+.data3{
+    border:none;
+    outline:none;
+    border-bottom:2px solid grey;
+    width:100%;
+}
+#gender {
+    color:black ;
+}
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 190px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  span.label {
+    font-family: serif;
+    font-weight: normal;
+  }
+  span.icon {
+    background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+  }
+  span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .abcRioButtonBlue .abcRioButtonContentWrapper {
+    border: 1px solid rgb(0 0 0 / 0%);
+    background-color: rgb(78 58 173);
+}
+
+
+  .column{
+      margin: auto;
+  }
+  .column1{
+      margin: auto;
+  }
+  .card1{
+    margin-left: 148px;
+    background-color: white;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: (0 0 0 / 59%);
+    margin-top: 50px;
+   }
+
+  .card2{
+    margin-left: 250px;
+    width: 55%;
+    background-color:white;
+    border-radius: 10px;
+   
+   }
+  .card3{
+    
+    background-color:rgb(183 106 209 / 24%);
+   }
+   .row h1{
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    margin-left: -22px;
+   }
+   .row1 h1{
+    font-family: 'Cormorant Garamond', serif;
+ 
+font-size: 65px;
+   }
+   .btn-primary{
+    color: rgb(255 255 255);
+    background-color: rgb(78 58 173);
+    border-color: rgb(78 58 173);
+   }
+   .Fbtn{
+    color: rgb(255 255 255);
+    background-color: rgb(78 58 173);
+    border-color: rgb(78 58 173);
+   }
+  
+ 
