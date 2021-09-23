@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-bpx;
+}
+.login{
+    background: rgb(240 210 244);
+    background-size:contain;
+    height:200vh;
+}
+
+  .card3{
+    
+    background-color:white
+   }
+   .Fbtn{
+    color: rgb(255 255 255);
+    background-color: rgb(78 58 173);
+    border-color: rgb(78 58 173);
+   }
+  
+ 

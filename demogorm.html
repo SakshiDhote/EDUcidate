@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+       <div class="container">
+           <div class="wrapper">
+            <form method="POST" action="/insertadmission/insertadmission/">
+                <h1 class="mb-4">Admission Details</h1>
+                <div class="form-group">
+                  <label for="admissionid">Admission ID</label>
+                  <input type="number" class="form-control" id="admissionid" {{form.studentid}}>
+                </div>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" {{form.name}}>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                      <label for="dob">Dob</label>
+                      <input type="date" class="form-control" id="dob" {{form.dob}}>
+                    </div>
+                    <div class="col">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" {{form.age}}>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Gender</label>
+                            <select id="inputState" class="form-control" style="width: 400px;" {{form.gender}}></select>
+                              <option selected>Choose...</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                              <option>Others</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="medium">Medium</label>
+                            <input type="text"  class="form-control" id="medium" {{form.mediumid}}>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                           <label for="class">Class</label>
+                           <input type="text" id="class" class="form-control" style="width: 400px;" {{form.classid}}>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Blood Group</label>
+<!--                            <select id="inputState" class="form-control" style="width: 400px;" {{form.bloodgroup}}-->
+
+<!--                            </select>-->
+                            <input type=""text class="form-control" {{form.bloodgroup}}>
+                          </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                      <label for="academicyear">Academic Year</label>
+                      <input type="number" class="form-control" id="academicyear" {{form.academicyear}}>
+                    </div>
+                    <div class="col">
+                        <label for="mobile">Mobile</label>
+                        <input type="number" class="form-control" id="mobile" placeholder="+91-" {{form.mobileno}}>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                      <label for="birthplace">Place of Birth</label>
+                      <input type="text" class="form-control" id="birthplace" {{form.placeofbirth}}>
+                    </div>
+                    <div class="col">
+                        <label for="aadharno">Aadhar No.</label>
+                        <input type="number" class="form-control" id="aadharno" {{form.aadharno}}>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Nationality</label>
+                            <select id="inputState" class="form-control" style="width: 400px;">{{form.nationalityid}}
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Religion</label>
+                            <select id="inputState" class="form-control" style="width: 400px;" >{{form.religionid}}
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fathername">Father Name</label>
+                    <input type="text" class="form-control" id="fathername" {{form.fathername}}>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                      <label for="fathmobile">Mobile No.</label>
+                      <input type="number" class="form-control" id="fathmobile" placeholder="+91"{{form.fathermobileno}}>
+                    </div>
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" {{form.fatheremail}}>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                      <label for="fathaadharno">Aadhar no.</label>
+                      <input type="test" class="form-control" id="fathaadharno" {{form.fatheraadharno}}>
+                    </div>
+                    <div class="col">
+                        <label for="fathpanno">Pan no.</label>
+                        <input type="number" class="form-control" id="fathpanno" {{form.fatherpanno}}>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="fatheroccupation">Father Occupation</label>
+                    <input type="text" class="form-control" id="fatheroccupation" {{form.fatherocupation}}>
+                </div>
+
+                <div class="form-group">
+                    <label for="mothername">Mother Name</label>
+                    <input type="text" class="form-control" id="mothername" {{form.mothername}}>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                      <label for="mothmobile">Mobile No.</label>
+                      <input type="number" class="form-control" id="mothmobile" placeholder="+91" {{form.mothermobileno}}>
+                    </div>
+<!--                    <div class="col">-->
+<!--                        <label for="email">Email</label>-->
+<!--                        <input type="email" class="form-control" id="email" {{form.motherocupation}}-->
+<!--                    </div>-->
+                </div>
+<!--                <div class="form-row mt-3">-->
+<!--                    <div class="col">-->
+<!--                      <label for="mothaadharno">Aadhar no.</label>-->
+<!--                      <input type="test" class="form-control" id="mothaadharno" {{form.castecategoryid}}-->
+<!--                    </div>-->
+<!--                    <div class="col">-->
+<!--                        <label for="mothpanno">Pan no.</label>-->
+<!--                        <input type="number" class="form-control" id="mothpanno" {{form.casteid}}-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="form-group mt-3">
+                    <label for="motheroccupation">Mother Occupation</label>
+                    <input type="text" class="form-control" id="motheroccupation" {{form.motherocupation}}>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Caste Category</label>
+                            <select id="inputState" class="form-control" style="width: 400px;" >{{form.castecategoryid}}
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Cast</label>
+                            <select id="inputState" class="form-control" style="width: 400px;" >{{form.casteid}}
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                      <label for="presaddress">Present Address</label>
+                      <!-- <input type="text" class="form-control" id="presaddress" > -->
+                      <textarea name="" class="form-control" id="" cols="30" rows="10" {{form.presentaddress}}></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="peraddress">Permanant Address</label>
+                        <textarea name="" class="form-control" id="" cols="30" rows="10" {{form.permanentaddress}}></textarea>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                      <label for="exampleFormControlFile1">Address Proof</label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1" {{form.addressproof}}>
+                </div>
+
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">City</label>
+                            <select id="inputState" class="form-control" style="width: 400px;">{{form.cityid}}
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control" style="width: 400px;" >{{form.stateid}}
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Country</label>
+                            <select id="inputState" class="form-control" style="width: 400px;" {{form.countryid}}></select>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Pincode</label>
+                            <input type="number" class="form-control" {{form.pincode}}>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <button type="reset" class="btn btn-info mt-3">Reset</button>
+              </form>
+           </div>
+       </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
